@@ -1,4 +1,23 @@
+const bacs_kiskun = document.getElementById('bacs_kiskun');
+const baranya = document.getElementById('baranya');
+const bekes = document.getElementById('bekes');
+const borsod_abauj_zemplen = document.getElementById('borsod_abauj_zemplen');
+const fejer = document.getElementById('fejer');
+const gyor_moson_sopron = document.getElementById('gyor_moson_sopron');
+const hajdu_bihar = document.getElementById('hajdu_bihar');
+const heves = document.getElementById('heves');
+const jasz_nagykun_szolnok = document.getElementById('jasz_nagykun_szolnok');
+const komarom_esztergom = document.getElementById('komarom_esztergom');
+const nograd = document.getElementById('nograd');
+const pest = document.getElementById('pest');
+const somogy = document.getElementById('somogy');
+const szabolcs_szatmar_bereg = document.getElementById('szabolcs_szatmar_bereg');
+const tolna = document.getElementById('tolna');
+const vas = document.getElementById('vas');
+const veszprem = document.getElementById('veszprem');
+const zala = document.getElementById('zala');
 const csongrad = document.getElementById('csongrad');
+
 const add_button = document.getElementById('add_button');
 const remove_button = document.getElementById('remove_button');
 const modify_button = document.getElementById('modify_button')
@@ -98,6 +117,78 @@ function modify_city() {
     wait();
   }, 300);
 }
+
+bacs_kiskun.addEventListener('click', () =>
+  get_city(bacs_kiskun_city)
+);
+
+baranya.addEventListener('click', () =>
+  get_city(baranya_city)
+);
+
+bekes.addEventListener('click', () =>
+  get_city(bekes_city)
+);
+
+borsod_abauj_zemplen.addEventListener('click', () =>
+  get_city(borsod_abauj_zemplen_city)
+);
+
+fejer.addEventListener('click', () =>
+  get_city(fejer_city)
+);
+
+gyor_moson_sopron.addEventListener('click', () =>
+  get_city(gyor_moson_sopron_city)
+);
+
+hajdu_bihar.addEventListener('click', () =>
+  get_city(hajdu_bihar_city)
+);
+
+heves.addEventListener('click', () =>
+  get_city(heves_city)
+);
+
+jasz_nagykun_szolnok.addEventListener('click', () =>
+  get_city(jasz_nagykun_szolnok_city)
+);
+
+komarom_esztergom.addEventListener('click', () =>
+  get_city(komarom_esztergom_city)
+);
+
+nograd.addEventListener('click', () =>
+  get_city(nograd_city)
+);
+
+pest.addEventListener('click', () =>
+  get_city(pest_city)
+);
+
+somogy.addEventListener('click', () =>
+  get_city(somogy_city)
+);
+
+szabolcs_szatmar_bereg.addEventListener('click', () =>
+  get_city(szabolcs_szatmar_bereg_city)
+);
+
+tolna.addEventListener('click', () =>
+  get_city(tolna_city)
+);
+
+vas.addEventListener('click', () =>
+  get_city(vas_city)
+);
+
+veszprem.addEventListener('click', () =>
+  get_city(veszprem_city)
+);
+
+zala.addEventListener('click', () =>
+  get_city(zala_city)
+);
 
 csongrad.addEventListener('click', () =>
   get_city(csongrad_city)
@@ -275,16 +366,6 @@ function initMap() {
 
   // New map
   var map = new google.maps.Map(document.getElementById('map'), options);
-
-  // // Listen for click on map
-  // google.maps.event.addListener(map, 'click', function(event) {
-  //   // Add marker
-  //   addMarker({
-  //     coords: event.latLng
-  //   });
-  // });
-
-
 
   // Loop through markers
   for (var i = 0; i < markers.length; i++) {
