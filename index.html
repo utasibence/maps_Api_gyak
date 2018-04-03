@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+  <meta charset="utf-8">
+  <title>ITC Kft.</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i" rel="stylesheet">
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <img src="img/drupal.png" id="logo" alt="Drupal logo">
+    <nav>
+      <ul>
+        <li><a href="#">Ország</a></li>
+        <li><a href="#">Megyék</a></li>
+        <li><a href="#">Városok</a></li>
+        <li><a href="#">Nevezetességek</a></li>
+        <li><a href="game.html">Játék</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="content_side">
+      <div id="output">
+      </div>
+      <input type="text" id="text_input">
+      <button type="button" name="add_button" class="add_button" id="add_button">Hozzáad</button>
+      <button type="button" name="remove_button" class="remove_button" id="remove_button">Töröl</button>
+      <button type="button" name="modify_button" class="modify_button" id="modify_button">Módosít</button>
+      <div id="map"></div>
+    </div>
+    <div class="search_side">
+      <input type="text" name="search" value="">
+      <button type="button" name="search_button">Keresés</button>
+      <ul>
+        <li id="bacs_kiskun">Bács-Kiskun</li>
+        <li id="">Baranya</li>
+        <li id="">Békés</li>
+        <li id="">Borsod-Abaúj-Zemplén</li>
+        <li id="csongrad">Csongrád</li>
+        <li id="">Fejér</li>
+        <li id="">Győr-Moson-Sopron</li>
+        <li id="">Hajdú-Bihar</li>
+        <li id="">Heves</li>
+        <li id="">Jász-Nagykun-Szolnok</li>
+        <li id="">Komárom-Esztergom</li>
+        <li id="">Nógrád</li>
+        <li id="">Pest</li>
+        <li id="">Somogy</li>
+        <li id="">Szabolcs-Szatmár-Bereg</li>
+        <li id="">Tolna</li>
+        <li id="">Vas</li>
+        <li id="">Veszprém</li>
+        <li id="">Zala</li>
+      </ul>
+    </div>
+  </main>
+  <footer>
+    &copy;2018, <a href="http://utasibence.hu/" target="_blank">Utasi Bence</a>.
+  </footer>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script type="text/javascript" src="cities.js"></script>
+  <script type="text/javascript" src="app.js"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDw6L9S__qc86g35Czl9eNL-JhBK2UQkss&callback=initMap"></script>
+</body>
+
+</html>

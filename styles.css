@@ -1,0 +1,171 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+/* ------------ HEADER ------------ */
+
+header {
+  display: flex;
+  flex-direction: column;
+}
+
+#logo {
+  width: 10%;
+  align-self: center;
+}
+
+nav {
+  width: 60%;
+  margin: auto;
+  margin-bottom: 15px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+nav ul li {
+  list-style: none;
+  font-size: 1.25em;
+}
+
+nav ul li a {
+  color: #0072C0;
+  text-decoration: none;
+  padding-bottom: 10px;
+  padding-top: 15px;
+}
+
+nav ul li a:hover {
+  border-bottom: 3px solid #0072C0;
+  color: grey;
+}
+
+/* ------------ MAIN ------------ */
+
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 70%;
+  margin: auto;
+}
+
+/* ------ GAME-CONTENT ------ */
+
+.game_content {
+  flex-direction: row;
+  width: 100%;
+}
+
+.game_content input {
+  width: 100%;
+  text-align: center;
+  font-size: 2em;
+}
+
+.game_button {
+  width: 50%;
+  font-size: 1.5em;
+  margin: 15px auto;
+  display: block;
+}
+
+/* ------ MAIN-CONTENT ------ */
+
+.content_side {
+  color: grey;
+}
+
+.content_side p {
+  margin-left: 15px;
+}
+
+.add_button {
+  background-color: lime;
+  border: solid 1px lime;
+
+}
+
+.remove_button {
+  background-color: red;
+  border: solid 1px red;
+}
+
+button + button {
+  margin-left: 10px;
+}
+
+#map {
+  height: 400px;
+  width: 100%;
+  margin: 50px auto;
+  border: 1px solid lightgrey;
+  box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
+}
+
+/* ------ MAIN-SEARCH ------ */
+
+.search_side ul li {
+  list-style: none;
+  color: grey;
+  font-style: italic;
+  cursor: pointer;
+}
+
+.search_side ul li:hover {
+  color: lightgrey;
+}
+
+button {
+  color: white;
+  background: #0072C0;
+  border: solid 1px rgba(0, 0, 0, .1);
+  box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
+}
+
+button:active {
+  box-shadow: none;
+}
+
+input {
+  color: grey;
+  border: 1px solid #dcdcdc;
+  margin-right: 1em;
+}
+
+input, button {
+  font-size: .85em;
+  padding: .65em 1em;
+  border-radius: .3em;
+  outline: 0;
+}
+
+/* ------------ FOOTER ------------ */
+
+footer {
+  margin-top: auto;
+  background-color: #0072C0;
+  text-align: center;
+  color: #F5F5F2;
+  padding: 15px;
+}
+
+footer a {
+  color: hsla(0, 0%, 100%, 0.86);
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: white;
+  text-decoration: underline;
+}
