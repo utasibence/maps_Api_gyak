@@ -86,7 +86,7 @@ function add_city() {
   geocode(text_input.value);
   setTimeout(function() {
     wait();
-  }, 300);
+  }, 500);
 }
 
 // Remove City from the List
